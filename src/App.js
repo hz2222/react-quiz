@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './index.css';
+import Card from "./card";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Quiz cards</h1>
+      <h2>Click on a card to reveal the answer</h2>
+    <div className="cards">  
+      <Card frontSide="Messi or Ronaldo ?" backSide="Bruh... its not even a debate..." />
+      <Card frontSide="Which is the best team in the world ?" backSide="FC Barcelona" />
+      <Card frontSide="The best midfield trio oat ?" backSide="Iniesta Busquets Xavi" />
+    </div>
     </div>
   );
 }
